@@ -1,10 +1,15 @@
 import styles from "./DialerButton.module.css";
 
 const DialerButton = (props) => {
+
+    const onButtonTap = () => {
+        if (!props.dialer) { props.getValue(props.value); }
+    }
+
     let styledClass = styles.button;
     props.dialer ? styledClass = styles.dialer_buton : styledClass = styles.button;
     return (
-        <button className={styledClass} > {props.children}</button >
+        <button className={styledClass} onClick={onButtonTap} value={props.value} > {props.children}</button >
     )
 }
 
