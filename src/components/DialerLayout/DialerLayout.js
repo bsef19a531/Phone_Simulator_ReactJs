@@ -11,7 +11,12 @@ const DialerLayout = () => {
     const [newDialerValue, setDialerValue] = useState('');
     const getButtonValue = (buttonValue) => {
         dialerValue += buttonValue;
-        console.log(dialerValue);
+
+        setDialerValue(dialerValue);
+    }
+
+    const backSpaceValue = () => {
+        dialerValue = dialerValue.slice(0, -1);
         setDialerValue(dialerValue);
     }
 
@@ -46,7 +51,7 @@ const DialerLayout = () => {
                     <DialerButton dialer={true}>
                         <img className={styles.dialer_image} src="images/dialer-icon.png" alt="dialer"></img>
                     </DialerButton>
-                    <button className={styles.dialer_clear_button}>⌫</button>
+                    <button className={styles.dialer_clear_button} onClick={backSpaceValue}>⌫</button>
                 </div >
             </Card >
         </div >
