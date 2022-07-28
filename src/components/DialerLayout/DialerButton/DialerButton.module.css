@@ -5,11 +5,11 @@
     color: white;
     background-color: rgb(37, 37, 37);
     border-radius: 100%;
-    padding: 20px 30px;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px 5px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -19,6 +19,10 @@
     background-color: white;
     color: rgb(37, 37, 37);
     border: 2px solid black;
+}
+
+.dialer_buton {
+    padding: 15px 20px;
 }
 
 .dialer_buton:hover {

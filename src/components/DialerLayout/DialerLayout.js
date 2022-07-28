@@ -1,4 +1,5 @@
 import DialerButton from "./DialerButton/DialerButton";
+import ButtonNav from "../ButtonNav/ButtonNav";
 import styles from "./DialerLayout.module.css";
 import Card from "../Card/Card";
 import { useState } from 'react';
@@ -53,6 +54,7 @@ const DialerLayout = () => {
                     </DialerButton>
                     <button className={styles.dialer_clear_button} onClick={backSpaceValue}>⌫</button>
                 </div >
+                <ButtonNav />
             </Card >
         </div >
     )
