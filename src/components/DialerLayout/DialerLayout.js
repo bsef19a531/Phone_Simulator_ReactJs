@@ -49,7 +49,7 @@ const DialerLayout = () => {
                     <DialerButton value="#" getValue={getButtonValue}>#</DialerButton>
                 </div>
                 <div className={styles.button_container}>
-                    <DialerButton dialer={true}>
+                    <DialerButton dialer={true} cancel={false}>
                         <img className={styles.dialer_image} src="images/dialer-icon.png" alt="dialer"></img>
                     </DialerButton>
                     <button className={styles.dialer_clear_button} onClick={backSpaceValue}>⌫</button>

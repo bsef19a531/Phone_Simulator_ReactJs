@@ -7,7 +7,7 @@ const DialerButton = (props) => {
     }
 
     let styledClass = styles.button;
-    props.dialer ? styledClass = styles.dialer_buton : styledClass = styles.button;
+    props.dialer ? props.cancel ? styledClass = styles.dialer_cancel_button : styledClass = styles.dialer_buton : styledClass = styles.button;
     return (
         <button className={styledClass} onClick={onButtonTap} value={props.value} > {props.children}</button >
     )

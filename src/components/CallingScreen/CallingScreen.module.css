@@ -1,0 +1,30 @@
+.calling_container {
+    text-align: center;
+}
+
+.calling_subcontainer {
+    margin: 40% 0px;
+}
+
+.calling_container h1,
+.calling_container h4 {
+    margin: 10px;
+}
+
+.calling_text {
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.calling_text p {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dialer_image {
+    width: 30px;
+}
