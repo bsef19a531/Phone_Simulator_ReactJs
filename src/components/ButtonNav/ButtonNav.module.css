@@ -20,9 +20,8 @@
     border: 2px solid rgb(17, 17, 17);
 }
 
-.nav_container button:hover,
-{
-color: rgb(0, 255, 4);
+.nav_container button:hover {
+    color: rgb(0, 255, 4);
 }
 
 .nav_container button:focus,
